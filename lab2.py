@@ -34,10 +34,10 @@ def sort_temperatures(float_list):
 def calc_median(float_list):
     float_list.sort()
     length = len(float_list)
-    if length % 2 == 0:
-        median = (float_list[length // 2 - 1] + float_list[length // 2]) / 2
-    else:
+    if length % 2 == 1:
         median = float_list[length // 2]
+    else:
+        median = float_list[length // 2 + 1] + float_list[length // 2] /2
     return median
         
     
